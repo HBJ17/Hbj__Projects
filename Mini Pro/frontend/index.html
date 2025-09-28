@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency AI Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚨 Emergency AI Analysis</h1>
+            <p>Upload an audio file to analyze emotion and distress level.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <input type="file" id="audioFile" accept="audio/wav, audio/mp3, audio/ogg">
+                <label for="audioFile" class="file-label">Choose Audio File</label>
+                <div class="options">
+                    <input type="checkbox" id="fastMode">
+                    <label for="fastMode">Fast Mode</label>
+                </div>
+                <button id="analyzeBtn">Analyze</button>
+                <span id="fileName">No file selected</span>
+            </div>
+
+            <div id="loader" class="loader hidden"></div>
+
+            <div id="results" class="results-section hidden">
+                <h2>Analysis Report</h2>
+                <div class="result-grid">
+                    <div class="result-card distress">
+                        <h3>Distress Token</h3>
+                        <p id="distressToken">---</p>
+                    </div>
+                    <div class="result-card emotion">
+                        <h3>Final Emotion</h3>
+                        <p id="emotion">---</p>
+                    </div>
+                    <div class="result-card confidence">
+                        <h3>Confidence Score</h3>
+                        <p id="confidenceScore">---</p>
+                    </div>
+                </div>
+                <div class="transcript-card">
+                     <h3>Transcript</h3>
+                     <p id="transcript">---</p>
+                </div>
+            </div>
+             <div id="error" class="error-message hidden"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
