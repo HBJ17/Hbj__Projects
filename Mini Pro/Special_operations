@@ -1,0 +1,21 @@
+#zipping
+x = ["ravi",'raj']
+y = ['cricket','football']
+
+pairs = list(zip(x,y))
+
+print(pairs)
+
+#enumerating
+for index,x in enumerate(x, start = 1):
+    print(index,x)
+
+#mapping
+p = [1,2,3,4,5]
+q = list(map( lambda gst:gst*2 ,p))
+print(q)
+
+#filtering
+meals = ["Idli", "Chicken Curry", "Poha", "Fish Fry"]
+veg = list(filter(lambda meal: meal not in ["Chicken Curry", "Fish Fry"], meals))
+print(veg)
