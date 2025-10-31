@@ -1,8 +1,16 @@
-n = int(input("Enter the number of rows: "))
-for i in range(n):
-    num = 1
-    print(" " * (n - i), end="")
-    for j in range(i + 1):
-        print(num, end=" ")
-        num = num * (i - j) // (j + 1)
-    print()
+n = int(input())
+
+for i in range(1, n + 1):
+    if i == 1:
+        print(" " * (n - i) + "*")
+    else:
+        print(" " * (n - i) + "*" + " " * (2 * i - 3) + "*")
+
+
+
+for i in range(n-1, 0, -1):
+    if i == 1:
+        print(" " * (n - i) + "*")
+    else:
+        print(" " * (n - i) + "*" + " " * (2 * i - 3) + "*")
+exit()

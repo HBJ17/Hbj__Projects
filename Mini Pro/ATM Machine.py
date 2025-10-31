@@ -41,11 +41,8 @@ while True:
         exit()
     else:
         print("Enter a valid Option")
-    repeat = int(input("Press any key to continue and 0 to discontinue: "))
-    if repeat == 0:
-        print("Thank You!!")
-    else:
-        continue
+    
+    
     
         
 

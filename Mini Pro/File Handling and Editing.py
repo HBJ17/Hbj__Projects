@@ -1,4 +1,6 @@
-with open("hii.txt","r+") as myfile:
-    print(myfile.read())
-    myfile.write("I am fineee")
-myfile.close()
+with open("file.txt", "w") as f:
+    f.write("Hello from Python!\n")
+
+with open("file.txt", "r") as f:
+    content = f.read()
+    print(content)

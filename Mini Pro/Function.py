@@ -5,6 +5,8 @@ def say_hi(name, age):
 say_hi("Hubert", str(17))
 
 def sum(num):
-    print(pow(num, 3))
+    print(num*2)
 sum(4)
+
+
 
