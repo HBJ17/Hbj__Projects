@@ -19,3 +19,5 @@ print(q)
 meals = ["Idli", "Chicken Curry", "Poha", "Fish Fry"]
 veg = list(filter(lambda meal: meal not in ["Chicken Curry", "Fish Fry"], meals))
 print(veg)
+
+
