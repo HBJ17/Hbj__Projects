@@ -1,5 +1,6 @@
 import string
 
+
 cipher_map = {}
 data = ""
 

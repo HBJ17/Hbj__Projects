@@ -1,6 +1,7 @@
 #Image Enhancement
 import cv2
 
+
 #reading the image
 img = cv2.imread("D:\Studies\PycharmProjects\PythonProject\Images\yyyy.jpg")
 

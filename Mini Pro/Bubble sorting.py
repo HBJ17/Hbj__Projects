@@ -1,6 +1,7 @@
 print("Bubble sorting")
 print()
 
+
 def bubble(a):
     n = len(a)
 
