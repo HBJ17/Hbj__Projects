@@ -37,4 +37,3 @@ def musical_chairs():
 
 
 musical_chairs()
-
