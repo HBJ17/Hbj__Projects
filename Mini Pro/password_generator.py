@@ -14,3 +14,5 @@ def generate_password(length):
     random.shuffle(password)
     return ''.join(password)
 
+length = int(input("Enter password length: "))
+print("Generated Password:", generate_password(length))
