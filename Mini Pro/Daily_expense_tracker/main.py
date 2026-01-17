@@ -30,18 +30,13 @@ def add_expense():
 if choice == "1":
     add_expense()
 
-def view_expenses():
-    total = 0
-
+def add_expense():
+    item = input("Item name: ")
     try:
-        with open("expenses.txt", "r") as file:
-            print("\n--- Expenses ---")
-            for line in file:
-                item, amount = line.strip().split(",")
-                print(item, ":", amount)
-                total += int(amount)
-
-        print("Total Spent:", total)
+        amount = int(input("Amount: "))
+        with open("expenses.txt", "a") as file:
+            file.write(f"{item},{amount}\n")
+        print("Expense added!")
     except:
-        print("No expenses found!")
+        print("Invalid amount")
 
