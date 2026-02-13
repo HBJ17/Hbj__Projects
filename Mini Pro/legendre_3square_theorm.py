@@ -10,7 +10,7 @@ def factors(n):
 def square(n):
     return(len(factors(n))%2 == 1)
 
-def three_squares(n):
+def threesquares(n):
     for i in range(0,n+1):
         for j in range(i,n+1):
             if square(i) and square(j) and square(n-(i+j)):
@@ -18,4 +18,4 @@ def three_squares(n):
                     True)
     return(False)
 
-three_squares(8)
+threesquares(8)
